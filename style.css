@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+#games {
+    width: 1400px;
+    height: 512px;
+}
+
+.status-wrap {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.leftbar {
+    position: relative;
+    width: 250px;
+    height: 19px;
+    display: flex;
+    background-color: red;
+    border: 1px solid #fff;
+    opacity: .9;
+}
+
+.lefbilly {
+    position: relative;
+    width: 250px;
+    height: 19px;
+    display: flex;
+    background-color: red;
+    border: 1px solid #fff;
+    opacity: .9;
+}
+
+.leftbar.left {
+    margin-left: 5%;
+    justify-content: left;
+}
+
+.leftbar.right {
+    margin-right: 5%;
+    justify-content: right;
+}
+
+.bossbg.right {
+    justify-content: right;
+}
+
+.player-name {
+    position: absolute;
+    top: 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.leftbar.left .player-name {
+    left: 4px;
+}
+
+.leftbar.leftbar.right .player-name {
+    right: 4px;
+}
+
+.life {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.gameover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.58);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameover.active {
+    display: flex;
+}
+
+.bgOver {
+    background-color: rgb(16, 16, 16);
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 4px solid rgb(81, 3, 3);
+}
+
+.bgOver h1 {
+    color: #ab8882;
+    font-family: "Arial", sans-serif;
+}
+
+#btn {
+    cursor: pointer;
+    background-color: rgb(36, 38, 62);
+    color: #d6d6d6;
+    font-size: 20px;
+    padding: 4px 20px;
+    border: 1px solid rgb(210, 186, 186);
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+#btn:hover {
+    transition: all .3s;
+    background-color: rgb(56, 59, 99);
+}
+
+.willamsbg {
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 19px;
+    background-color: red;
+    border: 1px solid #fff;
+    opacity: .9;
+}
+
+.lifewillams {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.lifeRoper2, .lifeboss {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.enemy-name {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.bossbg {
+    position: relative;
+    width: 200px;
+    height: 19px;
+    display: none;
+    background-color: red;
+    border: 1px solid #fff;
+    opacity: .9;
+}
+
+/*Победа*/
+
+.winsbg {
+    background-color: #00000077;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.winsbg.active {
+    display: flex;
+}
+
+.winer {
+    transition: all .5s;
+    transform: translateY(0%);
+    opacity: 1;
+    margin-top: 60px;
+    background-image: linear-gradient(to top,
+     grey, rgb(176, 188, 215), grey);
+    /*background-image: url('img/double dragonLogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgb(230, 213, 208);
+}
+
+.winer.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.winer h2 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.btnEnd {
+    font-size: 18px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #313030;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.btnEnd:hover {
+    transition: all .3s;
+    background-color: #000000;
+}
