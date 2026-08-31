@@ -231,15 +231,14 @@ export class Billy extends Fighters {
         this.y = 400;
       }, 400);
     }
-
-    setTimeout(() => {
+    
+    // Directions
+    if (this.isFace) {
+      this.image.src = "img/Billy Lee Left.png";
+      this.animations = [[575, 95, 22, 64]];
+    } else {
       this.image.src = "img/Billy Lee.png";
       this.animations = [[15, 94, 22, 64]];
-    }, 40);
-
-    if (this.isFace === true) {
-      this.image.src = "img/Billy Lee left.png";
-      this.animations = [[575, 95, 22, 64]];
     }
 
     if ((this.isFace === true && onGrid) || (this.isFace === true && onDrap)) {
@@ -253,6 +252,14 @@ export class Billy extends Fighters {
       ];
       fixedY = false;
     }
+
+    // if (this.isFace === false) {
+    //   this.image.src = "img/Billy Lee Left.png";
+    //   this.animations = [[575, 95, 22, 64]];
+    // } else {
+    //   this.image.src = "img/Billy Lee.png";
+    //   this.animations = [[16, 174, 22, 62]];
+    // }
 
     if (keys.left) {
       if (noMove === true) {
@@ -299,7 +306,7 @@ export class Billy extends Fighters {
 
     if (keys.right) {
       if (noMove === true) {
-        this.image.src = "img/Billy Lee Left.png";
+        this.image.src = "img/Billy Lee.png";
         this.animations = [[16, 174, 22, 62]];
         return;
       }
