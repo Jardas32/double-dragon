@@ -642,8 +642,8 @@ export class Billy extends Fighters {
     //  Поцелуй
     if (womens.kiss === true) {
       noMove = true;
-      this.image.src = "img/Billy Lee left.png";
-      this.animations = [[211, 1232, 25, 63]];
+      this.image.src = "img/Billy Lee.png";
+      this.animations = [[15, 94, 22, 64]];
     }
 
     // Анимация урона левая сторона
