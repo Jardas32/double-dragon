@@ -256,14 +256,14 @@ export class Billy extends Fighters {
 
     if (keys.left) {
       if (noMove === true) {
-        this.image.src = "img/Billy Lee left.png";
+        this.image.src = "img/Billy Lee Left.png";
         this.animations = [[575, 95, 22, 64]];
         return;
       }
 
       animation = true;
       if (onGrid || onDrap) {
-        this.image.src = "img/Billy Lee left.png";
+        this.image.src = "img/Billy Lee Left.png";
         this.animations = [
           [573, 174, 23, 62],
           [541, 175, 24, 63],
@@ -275,7 +275,7 @@ export class Billy extends Fighters {
         fixedY = false;
       } else {
         this.isFace = true;
-        this.image.src = "img/Billy Lee left.png";
+        this.image.src = "img/Billy Lee Left.png";
         this.animations = [
           [575, 95, 22, 64],
           [543, 95, 26, 64],
@@ -299,7 +299,7 @@ export class Billy extends Fighters {
 
     if (keys.right) {
       if (noMove === true) {
-        this.image.src = "img/Billy Lee left.png";
+        this.image.src = "img/Billy Lee Left.png";
         this.animations = [[16, 174, 22, 62]];
         return;
       }

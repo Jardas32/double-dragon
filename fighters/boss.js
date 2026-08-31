@@ -55,7 +55,7 @@ export class Boss extends Fighters {
 
                 //  Появление Boss
         if (player.x >= this.x - 120 && linda.countLife >= 2 &&
-            roper.countLife >= 2 && willams.countLife >= 1
+            roper.countLife >= 1 && willams.countLife >= 1
         ) {
             setTimeout(() => {
                 this.enemyBoss = false;
