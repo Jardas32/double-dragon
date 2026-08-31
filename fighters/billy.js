@@ -231,7 +231,7 @@ export class Billy extends Fighters {
         this.y = 400;
       }, 400);
     }
-    
+
     // Directions
     if (this.isFace) {
       this.image.src = "img/Billy Lee Left.png";
@@ -252,14 +252,6 @@ export class Billy extends Fighters {
       ];
       fixedY = false;
     }
-
-    // if (this.isFace === false) {
-    //   this.image.src = "img/Billy Lee Left.png";
-    //   this.animations = [[575, 95, 22, 64]];
-    // } else {
-    //   this.image.src = "img/Billy Lee.png";
-    //   this.animations = [[16, 174, 22, 62]];
-    // }
 
     if (keys.left) {
       if (noMove === true) {
@@ -462,10 +454,10 @@ export class Billy extends Fighters {
       ];
     }
 
-    if (this.isFace === true && keys.rCrocc) {
+    if (this.isFace && keys.rCrocc) {
       if (noMove === true) return;
       nofight = true;
-      this.image.src = "img/Billy Lee left.png";
+      this.image.src = "img/Billy Lee Left.png";
       this.animations = [
         //Attack Hand Left
         [566, 280, 29, 64],
@@ -480,7 +472,7 @@ export class Billy extends Fighters {
     if (keys.lkick) {
       if (noMove === true) return;
       nofight = true;
-      this.image.src = "img/Billy Lee.png";
+      this.image.src = "img/Billy Lee Left.png";
       this.animations = [
         //Attack LoweKick Right
         [16, 359, 25, 64],
@@ -488,10 +480,10 @@ export class Billy extends Fighters {
       ];
     }
 
-    if (this.isFace === true && keys.lkick) {
+    if (this.isFace && keys.lkick) {
       if (noMove === true) return;
       nofight = true;
-      this.image.src = "img/Billy Lee left.png";
+      this.image.src = "img/Billy Lee Left.png";
       this.animations = [
         //Attack LoweKick Left
         [570, 359, 25, 64],
