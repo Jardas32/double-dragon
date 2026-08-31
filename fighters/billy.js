@@ -643,11 +643,7 @@ export class Billy extends Fighters {
     if (womens.kiss === true) {
       noMove = true;
       this.image.src = "img/Billy Lee left.png";
-      this.animations = [
-        [211, 1232, 25, 63],
-        [180, 1232, 23, 63],
-        [147, 1232, 25, 63],
-      ];
+      this.animations = [[211, 1232, 25, 63]];
     }
 
     // Анимация урона левая сторона
@@ -790,7 +786,7 @@ export class Billy extends Fighters {
 
     //Атака рукой появляется квадрат
     if (this.attackZone) {
-      //ctx.fillStyle = 'red';
+      ctx.fillStyle = "transparent";
       ctx.fillRect(
         this.attackZone.x - cameraX,
         this.attackZone.y - cameraY,
