@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Dragon</title>
+    <link rel="shortcut icon" href="img/double dragonLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="games"></canvas>
+    <div class="status-wrap">
+        <div class="lefbilly left">
+            <div class="player-name">Billy Lee</div>
+            <div class="life" id="player1Life"></div>
+        </div>
+        <div class="lifeWillams leftbar right">
+            <div class="enemy-name">Willams</div>
+            <div class="lifewillams" id="willams"></div>
+        </div>
+        <div class="bossbg leftbar right">
+            <div class="enemy-name">Boss</div>
+            <div class="lifeboss" id="boss"></div>
+        </div>
+        <div class="lifeRoper leftbar right">
+            <div class="player-name">Roper</div>
+            <div class="life" id="player2Right"></div>
+        </div>
+        <div class="lifeLinda leftbar right">
+            <div class="player-name">Linda</div>
+            <div class="life" id="linda"></div>
+        </div>
+</div>
+
+
+<div class="gameover">
+    <div class="bgOver">
+        <h1>Игра Окончена !</h1>
+        <button id="btn">Начать заново</button>
+    </div>
+</div>
+
+<div class="winsbg">
+    <div class="winer">
+        <h2>Билли спас свою девушку!</h2>
+        <button class="btnEnd">Сыграть ещё</button>
+    </div>
+</div>
+
+             <!--Музыка и ефекты для игры-->
+    <audio class="audioMission" src="audio/Double Dragon II — Mission 2 (Arcade)(1988) (www.lightaudio.ru).mp3"></audio>
+    <audio class="theEnd" src="audio/04 The Elder Son is Heart-Broken.mp3"></audio>
+    <audio class="fightBoss" src="audio/07 Fighting ABOBO.mp3"></audio>
+    <audio class="damageAttack" src="audio/sfx-08-101soundboards.mp3"></audio>
+    <audio src="audio/deadBilly.mp3" class="deadBilly"></audio>
+    <audio src="audio/deadEnamy.mp3" class="deadEnemy"></audio>
+    <audio class="deadLinda" src="audio/Voice 03.mp3"></audio>
+    <audio src="audio/jump.mp3" class="jump"></audio>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
